@@ -1,0 +1,521 @@
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #dddddd;
+    justify-content: space-between;
+    display: flex;
+    padding: 3px 15px;
+    height: 70px;
+}
+/* styles.css */
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Căn chỉnh theo chiều ngang */
+  height: 70px; /* Đặt chiều cao cho logo */
+}
+
+.logo img {
+  width: 80px; /* Đặt chiều rộng mong muốn cho hình ảnh */
+  height: auto; /* Để tỷ lệ khung hình được bảo tồn */
+  margin-right: 10px; /* Khoảng cách giữa hình ảnh và dòng chữ */
+  margin-top: 6px;
+}
+
+.logo-link {
+  text-decoration: none; /* Loại bỏ gạch chân liên kết */
+  display: flex;
+  align-items: center; /* Căn chỉnh theo chiều dọc */
+}
+
+.logo-text {
+  font-size: 25px; /* Kích thước chữ */
+  margin: 0; /* Loại bỏ margin mặc định của thẻ span */
+  margin-top: 5px;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: black;
+  align-items: center;
+}
+.menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0;
+    margin-top: 11px;
+
+  }
+  ul.menu li {
+    display: block;
+  }
+  
+  ul.menu li a {
+    color: black;
+    text-align: center;
+    font-size: 23px;
+    padding: 30px 35px;
+    text-decoration: none;
+   
+  }
+
+  ul.menu li a:hover {
+    background-color: #e4abab;
+
+  }
+ 
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    width: 190px;
+    background-color: #dddddd; /* Màu nền xám */
+    padding: 1px;
+    text-align: center;
+    margin-left: 0px;
+    top: 76px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    text-decoration: none;
+   margin-top: -2px;
+   display: block;
+  }
+/*css body*/
+  .content {
+background-color: rgb(255, 255, 255);
+  }
+  .search-box {
+    margin-top: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid red; /* Màu viền đỏ */
+    border-radius: 35px; /* Bo tròn góc viền */
+    padding: 5px; /* Khoảng cách giữa viền và nội dung */
+    width: 700px; /* Chiều dài của khung tìm kiếm */
+    height: 40px; /* Chiều cao của khung tìm kiếm */
+    margin-top: 2%;
+    margin-left: 35%;
+  }
+  
+  .search-input {
+    flex: 1;
+    border: none; /* Loại bỏ viền nội dung input */
+    outline: none; /* Loại bỏ đường viền khi focus */
+    padding: 5px; /* Khoảng cách giữa nội dung input và viền */
+    
+  }
+  
+  .search-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  
+.topbox h1 {
+  color: white;
+  margin: 0;
+  padding-top: 2%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 30px;
+  text-align: left;
+  margin-left: 25px;
+}
+.topbox-left-content {
+  padding: 0 ;
+}
+.topbox-left-content h1 {
+  color: black;
+  padding-top: 30px;
+}
+.breadcrumb_item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.breadcrumb_list {
+  display: flex;
+  align-items: center; /* Căn chỉnh text lùi vào */
+  margin-left: -17px;
+}
+.breadcrumb ol li {
+  display: inline; /* Hiển thị mục trang chủ/máy tính bàn/sản phẩm theo chiều ngang */
+
+}
+.breadcrumb ol li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Kiểu chữ */
+  font-size: 20px;
+}
+/* css filter*/
+.filter_bar {
+  background-color: rgb(239, 239, 239);
+  width: 650px;
+  height: 1300px;
+  border-radius: 15px;
+  margin-left: 1vw;
+  margin-right: 2vh;
+}
+/* css product*/
+.filter_bar + .product {
+  margin-left: 20px;
+}
+.container_body {
+  display: flex;
+  justify-content: space-between;
+}
+.filter_bar h3 {
+  text-decoration: underline;
+}
+
+.container_body h3 {
+  font-size: 25px;
+  margin-left: 1vw;
+  margin-top: 2vh;
+  margin-bottom: 10px;
+}
+.danhmuc h4 {
+  margin-left: 1vw;
+  margin-top: 1vh;
+  font-size: 20px;
+  font-style: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.danhmuc_content {
+  margin-left:1vw;
+  margin-top: -1vh;
+}
+.danhmuc_content li {
+  margin-top: 10px;
+  font-size: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: bold;
+}
+.manufacturer H4{
+  margin-left: 1vw;
+  margin-top: 3vh;
+  font-size: 20px;
+  margin-bottom: 1vh;
+  font-style: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.manufacturer_checkbox {
+  margin-left: 1vw;
+  display: flex;
+  flex-wrap: wrap; /* Cho phép các ô checkbox xuống dòng khi không đủ chỗ */
+}
+
+.manufacturer_checkbox label {
+  margin-right: 25px; /* Khoảng cách giữa các ô checkbox */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  min-width: 85px; /* Điều chỉnh kích thước tối thiểu của label */
+  margin-right: 20px;
+
+}
+.manufacturer_checkbox label input[type="checkbox"] {
+  margin-right: 5px; /* Khoảng cách giữa checkbox và nhãn */
+}
+.manufacturer_checkbox span {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: bold;
+  font-size: 15px;
+}
+/* checkbox giá */
+.price H4{
+  margin-left: 1vw;
+  margin-top: 3vh;
+  font-size: 20px;
+  margin-bottom: 1vh;
+  font-style: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.price_checkbox {
+  margin-left: 1vw;
+  display: flex;
+  flex-wrap: wrap; /* Cho phép các ô checkbox xuống dòng khi không đủ chỗ */
+}
+
+.price_checkbox label {
+  margin-right: 25px; /* Khoảng cách giữa các ô checkbox */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  min-width: 85px; /* Điều chỉnh kích thước tối thiểu của label */
+  margin-right: 20px;
+  margin-top: 3%;
+}
+.price_checkbox label input[type="checkbox"] {
+  margin-right: 11px; /* Khoảng cách giữa checkbox và nhãn */
+}
+.price_checkbox span {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: bold;
+  font-size: 17px;
+}
+/* Checkbox cpu */
+.cpu H4{
+  margin-left: 1vw;
+  margin-top: 3vh;
+  font-size: 20px;
+  margin-bottom: 1vh;
+  font-style: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.cpu_checkbox {
+  margin-left: 1vw;
+  display: flex;
+  flex-wrap: wrap; /* Cho phép các ô checkbox xuống dòng khi không đủ chỗ */
+}
+
+.cpu_checkbox label {
+  margin-right: 25px; /* Khoảng cách giữa các ô checkbox */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  min-width: 130px; /* Điều chỉnh kích thước tối thiểu của label */
+  margin-right: 20px;
+  margin-top: 3%;
+}
+.cpu_checkbox label input[type="checkbox"] {
+  margin-right: 11px; /* Khoảng cách giữa checkbox và nhãn */
+}
+.cpu_checkbox span {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: bold;
+  font-size: 17px;
+}
+/* Checkbox ram */
+.ram H4{
+  margin-left: 1vw;
+  margin-top: 3vh;
+  font-size: 20px;
+  margin-bottom: 1vh;
+  font-style: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.ram_checkbox {
+  margin-left: 1vw;
+  display: flex;
+  flex-wrap: wrap; /* Cho phép các ô checkbox xuống dòng khi không đủ chỗ */
+}
+
+.ram_checkbox label {
+  align-items: center; /* Căn giữa theo chiều dọc */
+  min-width: 110px; /* Điều chỉnh kích thước tối thiểu của label */
+  margin-right: 20px;
+  margin-top: 2%;
+}
+.ram_checkbox label input[type="checkbox"] {
+  margin-right: 11px; /* Khoảng cách giữa checkbox và nhãn */
+}
+.ram_checkbox span {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: bold;
+  font-size: 17px;
+}
+/* Checkbox vga */
+.vga H4{
+  margin-left: 1vw;
+  margin-top: 3vh;
+  font-size: 20px;
+  margin-bottom: 1vh;
+  font-style: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.vga_checkbox {
+  margin-left: 1vw;
+  display: flex;
+  flex-wrap: wrap; /* Cho phép các ô checkbox xuống dòng khi không đủ chỗ */
+}
+
+.vga_checkbox label {
+  align-items: center; /* Căn giữa theo chiều dọc */
+  min-width: 110px; /* Điều chỉnh kích thước tối thiểu của label */
+  margin-right: 20px;
+  margin-top: 2%;
+}
+.vga_checkbox label input[type="checkbox"] {
+  margin-right: 11px; /* Khoảng cách giữa checkbox và nhãn */
+}
+.vga_checkbox span {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: bold;
+  font-size: 17px;
+}
+/* Checkbox bảo hành */
+.guarantee H4{
+  margin-left: 1vw;
+  margin-top: 3vh;
+  font-size: 20px;
+  margin-bottom: 1vh;
+  font-style: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.guarantee_checkbox {
+  margin-left: 1vw;
+  display: flex;
+  flex-wrap: wrap; /* Cho phép các ô checkbox xuống dòng khi không đủ chỗ */
+}
+
+.guarantee_checkbox label {
+  align-items: center; /* Căn giữa theo chiều dọc */
+  min-width: 90px; /* Điều chỉnh kích thước tối thiểu của label */
+  margin-right: 20px;
+  margin-top: 2%;
+}
+.guarantee_checkbox label input[type="checkbox"] {
+  margin-right: 11px; /* Khoảng cách giữa checkbox và nhãn */
+}
+.guarantee_checkbox span {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: bold;
+  font-size: 17px;
+}
+/*product card*/
+.product_card {
+  background-color: rgb(255, 255, 255);
+  width: 0px;
+  height: 645px;
+  border-radius: 20px;  
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+}
+.product_card:hover {
+  transform: translateY(-15px); /* Dịch sản phẩm lên khi hover */
+}
+.product_card .sanpham {
+  width: 250px;
+  height: 300px;
+  margin-left: 30px;
+}
+
+.cart {
+  width: 35px;
+  margin-left: 26vh;
+  margin-top: -10vh;
+}
+.product_row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -5px; /* Điều chỉnh để loại bỏ khoảng cách giữa các cột */
+}
+
+.product_col {
+  flex: 0 0 calc(25% - 20px); /* 4 cột trên mỗi hàng (25% width) */
+  margin-left: 5px; /* Khoảng cách giữa các cột */
+  margin-top: 15px;
+  margin-bottom: 60px; /* Khoảng cách dưới cùng của mỗi cột */
+}
+.product_infor h3 {
+  font-size: 20px;
+  margin-top: 35px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.product_infor li {
+  font-size: 17px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 10px;
+  margin-top: 1px;
+  margin-bottom: 5px; 
+
+}
+.product_infor p {
+  font-size: 25px;
+  margin-left: 10px;
+  margin-top: 18px;
+  font-family: 'open sans', sans-serif;
+  font-style: bold;
+}
+/* Media query for laptop screens (15.6 inch) */
+@media (min-width: 1280px) {
+  .product_card {
+    width: 280px;
+    height: 560px;
+  }
+
+  .product_card .sanpham {
+    width: 230px;
+    height: 250px;
+  }
+
+  .cart {
+    width: 30px;
+    margin-left: 11vw;
+    margin-top: -2vw;
+    
+  }
+
+  .product_col {
+    flex: 0 0 calc(25% - 15px);
+    margin-bottom: 45px;
+  }
+
+  .product_infor h3 {
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 8px;
+  }
+
+  .product_infor li {
+    font-size: 15px;
+    margin-bottom: 3px;
+  }
+
+  .product_infor p {
+    font-size: 22px;
+    margin-top: 1px;
+  }
+}
+
+/* Media query for smaller screens (mobile devices) */
+@media (max-width: 767px) {
+  .product_col {
+    flex: 0 0 calc(50% - 10px); /* 2 cột trên mỗi hàng (50% width) */
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+  }
+  
+  /* Adjust other styles for smaller screens if needed */
+}
+
+  /*css footer*/
+  .footer {
+    border-top: 3px solid #e6c3c3;
+  }
+  .shortcut_menu {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+  
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 5px;
+    font-size: 20px;
+  }
+  
+  ul li {
+    padding: 10;
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    
+  }
+   

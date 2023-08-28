@@ -1,0 +1,260 @@
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #dddddd;
+    justify-content: space-between;
+    display: flex;
+    padding: 3px 15px;
+    height: 70px;
+}
+/* styles.css */
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Căn chỉnh theo chiều ngang */
+  height: 70px; /* Đặt chiều cao cho logo */
+}
+
+.logo img {
+  width: 80px; /* Đặt chiều rộng mong muốn cho hình ảnh */
+  height: auto; /* Để tỷ lệ khung hình được bảo tồn */
+  margin-right: 10px; /* Khoảng cách giữa hình ảnh và dòng chữ */
+  margin-top: 6px;
+}
+
+.logo-link {
+  text-decoration: none; /* Loại bỏ gạch chân liên kết */
+  display: flex;
+  align-items: center; /* Căn chỉnh theo chiều dọc */
+}
+
+.logo-text {
+  font-size: 25px; /* Kích thước chữ */
+  margin: 0; /* Loại bỏ margin mặc định của thẻ span */
+  margin-top: 5px;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: black;
+  align-items: center;
+}
+.menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0;
+    margin-top: 11px;
+
+  }
+  ul.menu li {
+    display: block;
+  }
+  
+  ul.menu li a {
+    color: black;
+    text-align: center;
+    font-size: 23px;
+    padding: 30px 35px;
+    text-decoration: none;
+   
+  }
+
+  ul.menu li a:hover {
+    background-color: #e4abab;
+
+  }
+ 
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    width: 190px;
+    background-color: #dddddd; /* Màu nền xám */
+    padding: 1px;
+    text-align: center;
+    margin-left: 0px;
+    top: 76px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    text-decoration: none;
+   margin-top: -2px;
+   display: block;
+  }
+  .top_banner {
+    height: 100%;
+    width: 100%;
+   } 
+.Product_title {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 40px;
+  text-align:  center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.spotLight_row {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+.spotLight_col {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  flex-basis:50% ;
+  margin-right: 1%;
+  :hover {
+    background-color: #ddd;
+  }
+}
+.spotLight_img {
+  width: 100%;
+  height: auto;
+}
+.spoLightCard_info .tittle {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: auto;
+}
+
+.spoLightCard_info .context {
+  font-size: 17px;
+  text-align: center;
+}
+.centralBanner_img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.serviceArea_row {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.serviceArea_col {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 90px;
+  flex-basis:50% ;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.underline-on-hover {
+  text-decoration: none; 
+}
+
+.underline-on-hover:hover {
+  text-decoration: underline; 
+}
+.socialMarketing_row {
+  display: flex;
+  justify-content: center;
+  margin-top: 1px;
+  margin-left: 6px;
+}
+
+.socialMarketing_col {
+  position: relative; /* Đặt phần tử cha là relative để làm cơ sở cho overlay */
+  padding-left: 1%;
+  padding-right: 13%;
+  text-align: left; /* Căn giữa nội dung trong cột */
+  margin-bottom: 2%;
+  margin-left: 1px;
+}
+
+.socialImageWallpaper {
+  position: relative;
+  width: 130%; /* Độ rộng tự động thay đổi theo khung viewport */
+  max-width: 560px; /* Độ rộng tối đa của phần tử */
+  margin: 0 auto; /* Căn giữa theo chiều ngang */
+}
+
+.socialImageWallpaper img {
+  width: 130%; /* Độ rộng tự động thay đổi theo kích thước phần tử cha */
+  height: auto; /* Đảm bảo tỷ lệ cao tự động điều chỉnh */
+  display: block;
+}
+
+
+.transparent-box {
+  position: absolute;
+  align-items: center;
+  width: 130%;
+  height: 25%;
+  background-color: rgb(255, 253, 253);
+  opacity: 0.5;
+  justify-content: center;
+  margin-top: -60px;
+  transition: background-color 0.3s, color 0.3s; /* Hiệu ứng chuyển đổi màu */
+}
+.transparent-box:hover {
+  background-color: rgb(161, 161, 161); /* Màu nền khi hover */
+}
+.transparent-box h3 {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: 1;
+  margin-left: 4px;
+  margin-top: 10px;
+  transition: color 0.3s; /* Hiệu ứng chuyển đổi màu */
+}
+
+.context {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  margin-top: -18px;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 4px;
+  opacity: 1;
+  transition: color 0.3s; /* Hiệu ứng chuyển đổi màu */
+} 
+
+.transparent-box  h3:hover,
+.transparent-box .context:hover {
+  color: white; /* Màu chữ khi hover */
+}
+
+
+.footer {
+  border-top: 1px solid #ddd;
+}
+.shortcut_menu {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  padding-top: 5px;
+  font-size: 20px;
+}
+
+ul li {
+  padding: 10;
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+}
+ 
